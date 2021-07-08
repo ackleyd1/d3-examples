@@ -26,7 +26,7 @@ void scatter() {
   double padding_top = (svg_height - graph_height)/2;
 
   // set up div and responsive svg
-  D3::Selection viz_div = D3::Select("#foundation-viz");
+  D3::Selection viz_div = D3::Select("#target");
   D3::Selection viz_svg = viz_div.Append("svg").SetAttr("id", "scatterplot_svg")
                           .SetAttr("viewBox", "0 0 " +std::to_string(svg_width)+ " " +std::to_string(svg_height));
 

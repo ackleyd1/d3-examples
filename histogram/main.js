@@ -1,10 +1,4 @@
-var Module = {
-    onRuntimeInitialized: function() {
-      console.log('lerp result: ' + Module.lerp(1, 2, 0.5));
-    }
-  };
-
-  const height = 5
+const height = 5
 const width = 15
 const margin = ({top: 0, right: 0, bottom: 0, left: 0})
 const data = [5.1, 4.9, 8.6, 6.2, 5.1, 7.1, 6.7, 6.1, 5, 5, 5.2, 7.9, 11.1, 5.9, 5.5, 5.6, 6.5, 7.7, 5.7, 6.7]
@@ -31,7 +25,7 @@ yAxis = g => g
     .call(g => g.select(".domain").remove())
 
 // create svg
-const svg = d3.select("body").append("svg")
+const svg = d3.select("#target").append("svg")
     .attr("viewBox", [0,0, width, height]);
 
 // create histogram svg
